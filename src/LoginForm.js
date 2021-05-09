@@ -53,6 +53,7 @@ export function LoginFormF(){
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [message, setMessage] = useState('');
 
     // on mount
     useEffect(() => {
@@ -101,5 +102,6 @@ export function LoginFormF(){
         <input value={email} onChange={hanldeEmail} placeholder='email' />
 
         <input value={password} onChange={hanldePassword} placeholder='password' />
+        <input value={message} onChange={hanldeEmail} placeholder='your message' />
     </div>
 }
